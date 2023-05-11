@@ -13,10 +13,15 @@ public class Trainee {
     Scanner inp = new Scanner(System.in);  // Create a Scanner object
     System.out.println("Ask Databse for unused id:");
 
-    id = (int) inp.nextLine();  // Read user input
+    id = inp.nextInt();  // Read user input
   }
 
-  public static void main(String[] args) {
-    System.out.println("Hello World");
+  public RefundRequest requestRefund(String incourseName) {
+    return RefundRequest(incourseName, id);
+  }
+
+  public void displayRefuunds() {
+    System.out.println("gets the refunds where Traineeid = id from database and displays them ");
+    System.out.println("without a database i cant really write this function");
   }
 }
