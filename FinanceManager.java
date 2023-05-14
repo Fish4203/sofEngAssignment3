@@ -2,6 +2,7 @@
 import java.util.Scanner;
 
 public class FinanceManager {
+  // definitions
   String name;
   int id;
 
