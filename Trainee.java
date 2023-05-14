@@ -11,13 +11,17 @@ public class Trainee {
     name = inName;
     contactEmail = inContactEmail;
     Scanner inp = new Scanner(System.in);  // Create a Scanner object
-    System.out.println("Ask Databse for unused id:");
+    System.out.println("Ask Databse for unused trainee id:");
 
     id = inp.nextInt();  // Read user input
   }
 
   public RefundRequest requestRefund(String incourseName) {
-    return RefundRequest(incourseName, id);
+    Scanner inp = new Scanner(System.in);  // Create a Scanner object
+    System.out.println("Ask Databse for unused refund id:");
+
+    id = inp.nextInt();  // Read user input
+    return new RefundRequest(incourseName, id);
   }
 
   public void displayRefuunds() {
